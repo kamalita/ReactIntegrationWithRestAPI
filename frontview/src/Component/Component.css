@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) 2020.
+ * Kamalita's coding
+ */
+
+.navigation{
+    height:40%;
+    background: #282c34;
+    color: #61dafb;
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+

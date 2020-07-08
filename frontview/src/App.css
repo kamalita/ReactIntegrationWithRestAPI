@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+
+.navigation{
+  height:40%;
+  background: #282c34;
+  color: #61dafb;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
