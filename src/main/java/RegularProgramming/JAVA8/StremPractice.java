@@ -34,7 +34,8 @@ public class StremPractice {
         map.put(3,"qqae");
         map.put(2,"qwre");
         map.put(42,"qwsd");
-        Arrays.stream(map.keySet().toArray()).forEach(System.out::println);
+        //Arrays.stream(map.keySet().toArray()).forEach(System.out::println);
+        Arrays.stream(input).filter(s-> s.startsWith("a")).forEach(System.out::print);
 
 //        IFunctionalInterface lambda;
 //        lambda = ()-> System.out.println("lembda function executed");

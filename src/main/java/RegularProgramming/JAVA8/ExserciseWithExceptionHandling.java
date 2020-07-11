@@ -11,6 +11,7 @@ public class ExserciseWithExceptionHandling {
     public static void main(String[] args) {
         int[] numbers={1,6,3,41,5};
         int key=0;
+
         try {
             check(numbers, key, (v, k) -> System.out.println(v / k));
         }

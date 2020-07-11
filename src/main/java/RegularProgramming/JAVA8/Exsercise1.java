@@ -14,6 +14,8 @@ public class Exsercise1 implements ICompare{
                         new Person("jajal","aiswas",80),
                         new Person("jajal","kiswas",30),
                         new Person("aiii","bkswas",26));
+
+        list.forEach(System.out::println);
         //Stream.of(list).forEach(System.out::println);
         //Stream.of(list).forEach(s->s.compare);
         Collections.sort(list,(x1,x2)->x1.getLastName().compareTo(x2.getLastName()));
