@@ -1,6 +1,7 @@
 package com.javainuse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -35,6 +36,7 @@ public class Employee {
         return id;
     }
 
+    @Required
     public void setId(String id) {
         this.id = id;
     }

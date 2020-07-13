@@ -8,7 +8,7 @@ package RegularProgramming.JAVA8;
 public abstract class CheckImplementationImpl implements ICheckImplementaion{
     static int id=3;
     public abstract void checkAbstract();
-    void checkImplementation(){
+    static void checkImplementation(){
         System.out.println("checkImplementation  in abstract- "+id);
     }
 }
