@@ -10,6 +10,7 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -34,9 +35,22 @@ public class StremPractice {
         map.put(3,"qqae");
         map.put(2,"qwre");
         map.put(42,"qwsd");
+        String a="abc";
+        String ab="ab";
+        String b=ab+"c";
+        if(a==b){
+            System.out.println(true);
+        }
+        else if(a.equals(b)){
+            System.out.println("here"+true);
+        }
+        else {
+            System.out.println(false);
+        }
+
         //Arrays.stream(map.keySet().toArray()).forEach(System.out::println);
         Arrays.stream(input).filter(s-> s.startsWith("a")).forEach(System.out::print);
-
+        //Stream.of(map).collect(Collectors.toList()).stream().map((a)->a.keySet().iterator().next().longValue()).sorted().forEach(System.out::print);//.forEach(System.out::println);
 //        IFunctionalInterface lambda;
 //        lambda = ()-> System.out.println("lembda function executed");
 
