@@ -3,8 +3,10 @@
  * Kamalita's coding
  */
 
-import React, {Component, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import ListGroup from "react-bootstrap/ListGroup";
+import ClickIncrement from "./ClickIncrement";
+import HoverIncrement from "./HoverIncrement";
 
 export default function Home (){
     useEffect(()=>{
@@ -17,6 +19,8 @@ export default function Home (){
  }
         return(
             <div>
+                <ClickIncrement/>
+                <HoverIncrement/>
                 <ListGroup>
                     <ListGroup.Item>One</ListGroup.Item>
                     <ListGroup.Item>in</ListGroup.Item>
