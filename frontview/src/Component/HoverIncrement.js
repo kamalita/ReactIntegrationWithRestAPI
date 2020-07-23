@@ -26,15 +26,15 @@ class HoverIncrement extends Component{
     // }
 
     render() {
-        const{count,increment}=this.props;
+        const{count,increment,name,view}=this.props;
         return(
 
-        <p onMouseOver={increment}>this text is hovered {count} times {this.props.name}</p>
+        <p onMouseOver={increment}>this text is hovered {count} times {name} and I say {view}</p>
 
         );
     };
 
 
 }
-export default (UpdatedComponent)(HoverIncrement);
+export default (UpdatedComponent)(HoverIncrement,5);
 

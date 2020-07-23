@@ -20,5 +20,5 @@ render() {
 }
 
 }
-export default Incrementer(ClickIncrement);
+export default Incrementer(ClickIncrement,3);
 

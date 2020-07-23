@@ -5,6 +5,9 @@
 
 package RegularProgramming;
 
+import java.io.FileNotFoundException;
+import java.lang.module.FindException;
+
 public class InheritenceExample extends Parent implements IParent{
     void check(){
         System.out.println("child");
@@ -19,9 +22,22 @@ public class InheritenceExample extends Parent implements IParent{
         //Compile time error
         //iParent.testIParent();
     }
+    public void  m1() throws Exception{
+        try{
+            String s=null;
+            s.concat("asd");
+
+        }
+        catch (Exception e){
+            throw new FileNotFoundException();
+        }
+        finally {
+            throw new FileNotFoundException();
+        }
+    }
 }
 
-class Parent{
+class Parent {
     void test(){
         System.out.println("parent");
         synchronized(this) {
