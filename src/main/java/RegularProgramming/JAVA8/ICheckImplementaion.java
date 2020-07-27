@@ -6,6 +6,7 @@
 package RegularProgramming.JAVA8;
 
 public interface ICheckImplementaion {
+    static int h = 0;
      void checkAbstract();
 
      //Not possible as abstract class will not allow to create an object

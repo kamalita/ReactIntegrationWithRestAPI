@@ -6,7 +6,10 @@
 package RegularProgramming.JAVA8;
 
 public class ImplCheckImplementation extends CheckImplementationImpl{
+
     public static void main(String[] args) {
+
+
         ICheckImplementaion iCheckImplementaion=new ImplCheckImplementation();
         iCheckImplementaion.checkAbstract();
         iCheckImplementaion.defaultMethod();
@@ -25,6 +28,7 @@ public class ImplCheckImplementation extends CheckImplementationImpl{
 
         //Not possible
         //iCheckImplementaion2.checkRegularMethod();
+
 
     }
 

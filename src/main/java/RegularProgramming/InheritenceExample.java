@@ -21,8 +21,12 @@ public class InheritenceExample extends Parent implements IParent{
         IParent iParent=new InheritenceExample();
         //Compile time error
         //iParent.testIParent();
+
+        InheritenceExample inheritenceExample=new InheritenceExample();
+        inheritenceExample.testIparentNonStatic();
+
     }
-    public void  m1() throws Exception{
+    void  m1() throws Exception{
         try{
             String s=null;
             s.concat("asd");
@@ -34,6 +38,15 @@ public class InheritenceExample extends Parent implements IParent{
         finally {
             throw new FileNotFoundException();
         }
+    }
+
+    @Override
+    public void testIparentNonStatic() {
+        float f=0.100000000f;
+        Float f1= (float) ( 1/10);
+        Double d= 67.90;
+        Long l= 678L;
+        System.out.println("float mark : "+f1.equals(f));
     }
 }
 
@@ -53,5 +66,6 @@ interface IParent{
     static void testIParent(){
         System.out.println("Iparent");
     }
+    void testIparentNonStatic();
 }
 

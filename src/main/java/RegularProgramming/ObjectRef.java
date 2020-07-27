@@ -11,7 +11,8 @@ public class ObjectRef {
         MemberChild mc=new MemberChild();
         System.out.println(m.hashCode()+"---"+ mc.hashCode());
 
-        m=mc;
+        m=new MemberChild();
+
         System.out.println(m.hashCode()+"---"+ mc.hashCode()+ "  -- "+ m.getClass());
 
         m.m1();
