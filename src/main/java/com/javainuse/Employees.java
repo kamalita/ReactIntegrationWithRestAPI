@@ -1,6 +1,5 @@
 package com.javainuse;
 
-import DependencyInjection.DITest;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

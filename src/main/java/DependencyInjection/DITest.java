@@ -1,7 +1,5 @@
 package DependencyInjection;
 
-import org.springframework.cglib.proxy.InterfaceMaker;
-
 public class DITest {
     public static void main(String args[]){
         DITest diTest=new DITest();
@@ -21,7 +19,7 @@ public class DITest {
     }
 
     public interface Database{
-        abstract void persist(String data);
+        void persist(String data);
     }
 
     public class Mysql implements Database{

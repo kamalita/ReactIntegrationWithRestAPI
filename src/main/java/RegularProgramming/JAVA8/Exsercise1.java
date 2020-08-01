@@ -5,8 +5,10 @@
 
 package RegularProgramming.JAVA8;
 
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class Exsercise1 implements ICompare{
     public static void main(String[] args) {
